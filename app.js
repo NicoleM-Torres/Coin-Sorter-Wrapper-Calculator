@@ -15,7 +15,7 @@ for (let i = 0; i < coin_arr.length; i++) {
     `${coinAmount_arr[i]} ${coin_arr[i]} = Dollar value of: $${totalVal_arr[
       i
     ].toFixed(2)}`
-  ); //toFixed rounds up two 2 decimal points
+  );
 } // END OF FOR LOOP
 
 //Calculate total value combined of coins
