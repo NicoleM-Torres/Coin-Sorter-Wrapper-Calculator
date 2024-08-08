@@ -1,7 +1,7 @@
 //VARIABLES
-let coin_arr = ["pennies", "nickles", "dimes", "quarters"];
+let coin_arr = ["Pennies", "Nickles", "Dimes", "Quarters"];
 let coinVal_arr = [0.01, 0.05, 0.1, 0.25];
-let coinAmount_arr = [125, 75, 78, 45];
+let coinAmount_arr = [125, 346, 157, 62];
 let wrapper_arr = [50, 40, 50, 40];
 let totalVal_arr = [0, 0, 0, 0];
 
@@ -11,7 +11,11 @@ let totalVal_arr = [0, 0, 0, 0];
 /* Iterates through each coin, stores it in "totalVal_arr" and displays in console */
 for (let i = 0; i < coin_arr.length; i++) {
   totalVal_arr[i] = coinAmount_arr[i] * coinVal_arr[i]; //multiply coinAmount_arr by conVal_arr
-  console.log(`${coin_arr[i]} value: $${totalVal_arr[i].toFixed(2)}`); //toFixed rounds up two 2 decimal points
+  console.log(
+    `${coinAmount_arr[i]} ${coin_arr[i]} = Dollar value of: $${totalVal_arr[
+      i
+    ].toFixed(2)}`
+  ); //toFixed rounds up two 2 decimal points
 } // END OF FOR LOOP
 
 //Calculate total value combined of coins
