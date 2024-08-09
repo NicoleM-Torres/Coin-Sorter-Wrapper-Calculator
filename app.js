@@ -515,6 +515,7 @@ let penny = 0;
 let nickel = 0;
 let dime = 0;
 let quarter = 0;
+
 // sort total amnt of each coin
 for (let i = 0; i < purse.length; i++) {
   switch (purse[i]) {
